@@ -1,0 +1,18 @@
+[user]
+	name = Marcos Moyano
+	email = marcos@anue.biz
+[diff]
+        tool = ediff
+        guitool = ediff
+
+[difftool "ediff"]
+        cmd = /usr/bin/ediff.sh $LOCAL $REMOTE $MERGED
+
+[merge]
+	tool = emerge
+
+[mergetool "ediff"]
+        cmd = /usr/bin/ediff.sh $LOCAL $REMOTE $MERGED $BASE
+        trustExitCode = true
+[mergetool "emerge"]
+	path = /usr/local/bin/emerge-for-git
